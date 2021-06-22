@@ -18,3 +18,10 @@ iex -S mix
 # Subir servidor
 
 mix phx.server
+
+# Criação da migration
+
+mix ecto.gen.migration create_users_table
+
+mix ecto.migrate
+mix ecto.reset
